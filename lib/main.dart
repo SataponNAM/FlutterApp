@@ -13,14 +13,17 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           appBarTheme:
-          const AppBarTheme(color: Color.fromARGB(255, 56, 64, 90)),
+              const AppBarTheme(color: Color.fromARGB(255, 56, 64, 90)),
           colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 152, 173, 231)),
+              seedColor: const Color.fromARGB(255, 152, 173, 231)),
           useMaterial3: true,
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('evolt', style: TextStyle(color: Colors.white),),
+            title: const Text(
+              'evolt',
+              style: TextStyle(color: Colors.white),
+            ),
             leading: IconButton(
                 onPressed: () {
                   debugPrint('Leading icon pressed');
@@ -43,16 +46,21 @@ class MyApp extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               children: [
-                const SizedBox(height: 20,),
+                const SizedBox(
+                  height: 20,
+                ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
                   child: Image.asset(
                     'assets/images/evolt.png',
                     width: 190,
                   ),
                 ),
-                const SizedBox(height: 150,),
-                
+                const SizedBox(
+                  height: 150,
+                ),
+
                 // const Text(
                 //   'ขอบคุณที่ใช้บริการ',
                 //   style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,),
@@ -60,7 +68,7 @@ class MyApp extends StatelessWidget {
                 // const Text(
                 //   'เรายินดีที่ได้เป็นส่วนหนึ่งในการเดินทางของคุณ',style: TextStyle(fontSize: 18),),
                 // const SizedBox(height: 60,),
-                
+
                 // const Row(
                 //   children: [
                 //     Text(
@@ -96,7 +104,7 @@ class MyApp extends StatelessWidget {
                 //   ],
                 // ),
                 // const SizedBox(height: 16),
-                
+
                 // const Row(
                 //   children: [
                 //     Icon(
@@ -118,7 +126,7 @@ class MyApp extends StatelessWidget {
                 //   ],
                 // ),
                 // const SizedBox(height: 16),
-                
+
                 // const Row(
                 //   children: [
                 //     Icon(
@@ -192,14 +200,14 @@ class MyApp extends StatelessWidget {
                 //       ],
                 //     ),
                 //   ],
-                // ),               
+                // ),
 
                 // const Card(
                 //   color: Color.fromARGB(255, 210, 202, 250),
                 //   child: Padding(
                 //     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 18),
                 //     child: Text(
-                //       '0W0', 
+                //       '0W0',
                 //       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 //     ),
                 //   ),
@@ -211,86 +219,122 @@ class MyApp extends StatelessWidget {
                     padding: EdgeInsets.all(20),
                     child: Text(
                       '------ (hrs)',
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25,
+                          color: Colors.white),
                     ),
                   ),
                 ),
-                const SizedBox(height: 5,),
-                const Text('Charging Power: ---- (kWh)', style: TextStyle(fontSize: 16),),
-                const SizedBox(height: 60,),
-
-                const Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                          labelText: 'Current SOC %',
-                          hintText: 'Enter Current Soc %',
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: 10,),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                          labelText: 'Target SOC %',
-                          hintText: 'Enter Target Soc %',
-                        ),
-                      ),
-                    ),
-                  ],
+                const SizedBox(
+                  height: 10,
                 ),
-                const SizedBox(height: 20,),
-
-                const Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                          labelText: 'Charging Rate (A)',
-                          hintText: 'Enter Charging Rate',
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: 10,),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                          labelText: 'Voltage (V)',
-                          hintText: 'Enter Voltage (V)',
-                        ),
-                      ),
-                    ),
-                  ],
+                const Text(
+                  'Charging : ---- (kWh)',
+                  style: TextStyle(fontSize: 16),
                 ),
-                const SizedBox(height: 20,),
-                
-                const Row(
-                  children: [
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                          labelText: 'Bat Capacity (kWh)',
-                          hintText: 'Enter Bat Capacity (kWh)',
+                const SizedBox(
+                  height: 70,
+                ),
+
+                Container(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Column(children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8))),
+                              labelText: 'Current SOC %',
+                              hintText: 'Enter Current Soc %',
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    SizedBox(width: 10,),
-                    Expanded(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                          labelText: 'Efficiency (%)',
-                          hintText: 'Enter Efficiency (%)',
+                        SizedBox(
+                          width: 10,
                         ),
-                      ),
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8))),
+                              labelText: 'Target SOC %',
+                              hintText: 'Enter Target Soc %',
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
+                    SizedBox(
+                      height: 20,
+                    ),
+                    
+                    Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8))),
+                              labelText: 'Charging Rate (A)',
+                              hintText: 'Enter Charging Rate',
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8))),
+                              labelText: 'Voltage (V)',
+                              hintText: 'Enter Voltage (V)',
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8))),
+                              labelText: 'Bat Capacity (kWh)',
+                              hintText: 'Enter Bat Capacity (kWh)',
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(8))),
+                              labelText: 'Efficiency (%)',
+                              hintText: 'Enter Efficiency (%)',
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ]),
                 ),
 
                 //const Spacer(),
@@ -331,7 +375,6 @@ class MyApp extends StatelessWidget {
             //   child: const Icon(Icons.shopping_cart),
             // ),
           ),
-        )
-      );
+        ));
   }
 }
