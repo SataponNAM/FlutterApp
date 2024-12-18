@@ -59,159 +59,7 @@ class MyApp extends StatelessWidget {
                 ),
                 const SizedBox(
                   height: 150,
-                ),
-
-                // const Text(
-                //   'ขอบคุณที่ใช้บริการ',
-                //   style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,),
-                // ),
-                // const Text(
-                //   'เรายินดีที่ได้เป็นส่วนหนึ่งในการเดินทางของคุณ',style: TextStyle(fontSize: 18),),
-                // const SizedBox(height: 60,),
-
-                // const Row(
-                //   children: [
-                //     Text(
-                //       'สรุปรายละเอียดการชาร์จ',
-                //       style: TextStyle(
-                //         fontSize: 22,
-                //         fontWeight: FontWeight.bold,
-                //       ),
-                //     ),
-                //   ],
-                // ),
-                // const SizedBox(height: 16),
-
-                // const Row(
-                //   //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //   children: [
-                //     Icon(
-                //       Icons.date_range,
-                //       size: 30,
-                //     ),
-                //     SizedBox(width: 10,),
-                //     Expanded(
-                //       child: Text(
-                //         'วันที่ชาร์จ',
-                //         style: TextStyle(fontSize: 18),
-                //       ),
-                //     ),
-                //     SizedBox(width: 50,),
-                //     Text(
-                //       '9 ธันวาคม 2567',
-                //       style: TextStyle(fontSize: 18),
-                //     ),
-                //   ],
-                // ),
-                // const SizedBox(height: 16),
-
-                // const Row(
-                //   children: [
-                //     Icon(
-                //       Icons.ev_station,
-                //       size: 30,
-                //     ),
-                //     SizedBox(width: 10,),
-                //     Expanded(
-                //       child: Text(
-                //         'สถานีชาร์จ',
-                //         style: TextStyle(fontSize: 18),
-                //       ),
-                //     ),
-                //     SizedBox(width: 50,),
-                //     Text(
-                //       'evolt',
-                //       style: TextStyle(fontSize: 18),
-                //     ),
-                //   ],
-                // ),
-                // const SizedBox(height: 16),
-
-                // const Row(
-                //   children: [
-                //     Icon(
-                //       Icons.power,
-                //       size: 30,
-                //     ),
-                //     SizedBox(width: 10,),
-                //     Expanded(
-                //       child: Text(
-                //         'ประเภทหัวชาร์จ',
-                //         style: TextStyle(fontSize: 18),
-                //       ),
-                //     ),
-                //     SizedBox(width: 50,),
-                //     Text(
-                //       'evolt',
-                //       style: TextStyle(fontSize: 18),
-                //     ),
-                //   ],
-                // ),
-                // const SizedBox(height: 16),
-
-                // const Row(
-                //   children: [
-                //     Icon(
-                //       Icons.access_time_filled,
-                //       size: 30,
-                //     ),
-                //     SizedBox(width: 10,),
-                //     Expanded(
-                //       child: Text(
-                //         'ระยะเวลาการชาร์จ',
-                //         style: TextStyle(fontSize: 18),
-                //       ),
-                //     ),
-                //     SizedBox(width: 50,),
-                //     Text(
-                //       'evolt',
-                //       style: TextStyle(fontSize: 18),
-                //     ),
-                //   ],
-                // ),
-                // const SizedBox(height: 16),
-
-                // const Row(
-                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //   children: [
-                //     Column(
-                //       children: [
-                //         Row(
-                //           children: [
-                //             Icon(
-                //               Icons.bolt,
-                //               size: 30,
-                //             ),
-                //             Text(
-                //               'สถานีชาร์จ',
-                //               style: TextStyle(fontSize: 18),
-                //             ),
-                //           ],
-                //         ),
-                //       ],
-                //     ),
-                //     //const SizedBox(width: 170,),
-                //     Column(
-                //       children: [
-                //         Text(
-                //           'evolt',
-                //           style: TextStyle(fontSize: 18),
-                //         ),
-                //       ],
-                //     ),
-                //   ],
-                // ),
-
-                // const Card(
-                //   color: Color.fromARGB(255, 210, 202, 250),
-                //   child: Padding(
-                //     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 18),
-                //     child: Text(
-                //       '0W0',
-                //       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                //     ),
-                //   ),
-                // ),
+                ), 
 
                 const Card(
                   color: Color.fromARGB(255, 69, 82, 126),
@@ -337,36 +185,6 @@ class MyApp extends StatelessWidget {
                   ]),
                 ),
 
-                //const Spacer(),
-                // const Row(
-                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //   children: [
-                //     Column(
-                //       children: [
-                //         Text(
-                //           'ค่าบริการรวมทั้งสิ้น',
-                //           style: TextStyle(
-                //             fontSize: 22,
-                //             fontWeight: FontWeight.bold,
-                //             color: Color.fromARGB(255, 230, 111, 0),
-                //           ),
-                //         ),
-                //       ],
-                //     ),
-                //     Column(
-                //       children: [
-                //         Text(
-                //           '500 บาท',
-                //           style: TextStyle(
-                //             fontSize: 22,
-                //             fontWeight: FontWeight.bold,
-                //             color: Color.fromARGB(255, 230, 111, 0),
-                //           ),
-                //         ),
-                //       ],
-                //     ),
-                //   ],
-                // ),
               ],
             ),
 
@@ -378,3 +196,50 @@ class MyApp extends StatelessWidget {
         ));
   }
 }
+
+// const Row(
+//   children: [
+//     Text(
+//       'สรุปรายละเอียดการชาร์จ',
+//       style: TextStyle(
+//         fontSize: 22,
+//         fontWeight: FontWeight.bold,
+//       ),
+//     ),
+//   ],
+// ),
+// const SizedBox(height: 16),
+
+// const Row(
+//   //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//   children: [
+//     Icon(
+//       Icons.date_range,
+//       size: 30,
+//     ),
+//     SizedBox(width: 10,),
+//     Expanded(
+//       child: Text(
+//         'วันที่ชาร์จ',
+//         style: TextStyle(fontSize: 18),
+//       ),
+//     ),
+//     SizedBox(width: 50,),
+//     Text(
+//       '9 ธันวาคม 2567',
+//       style: TextStyle(fontSize: 18),
+//     ),
+//   ],
+// ),
+// const SizedBox(height: 16),
+
+// const Card(
+//   color: Color.fromARGB(255, 210, 202, 250),
+//   child: Padding(
+//     padding: EdgeInsets.symmetric(vertical: 8, horizontal: 18),
+//     child: Text(
+//       '0W0',
+//       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+//     ),
+//   ),
+// ),
