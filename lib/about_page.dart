@@ -8,14 +8,14 @@ class AboutPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'evolt',
+          'About',
           style: TextStyle(color: Colors.white),
         ),
-        leading: IconButton(
-            onPressed: () {
-              debugPrint('Leading icon pressed');
-            },
-            icon: const Icon(Icons.menu)),
+        // leading: IconButton(
+        //     onPressed: () {
+        //       debugPrint('Leading icon pressed');
+        //     },
+        //     icon: const Icon(Icons.menu)),
         actions: [
           IconButton(
               onPressed: () {
@@ -29,20 +29,18 @@ class AboutPage extends StatelessWidget {
               icon: const Icon(Icons.shopping_bag_outlined))
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 20,),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-              child: Image.asset(
-                'assets/images/evolt.png',
-                width: 190,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("About", style: TextStyle(fontSize: 18),),
+              ],
             ),
-
           ],
         ),
         

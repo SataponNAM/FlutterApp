@@ -23,14 +23,14 @@ class _CalculatePageState extends State<CalculatePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'evolt',
+          'EV',
           style: TextStyle(color: Colors.white),
         ),
-        leading: IconButton(
-            onPressed: () {
-              debugPrint('Leading icon pressed');
-            },
-            icon: const Icon(Icons.menu)),
+        // leading: IconButton(
+        //     onPressed: () {
+        //       debugPrint('Leading icon pressed');
+        //     },
+        //     icon: const Icon(Icons.menu)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -52,7 +52,7 @@ class _CalculatePageState extends State<CalculatePage> {
                 padding: EdgeInsets.all(20),
                 child: Text(
                   '$time (hrs)',
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 25,
                       color: Colors.white),

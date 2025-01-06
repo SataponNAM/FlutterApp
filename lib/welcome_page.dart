@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/about_page.dart';
+import 'package:flutter_app/calculate_page.dart';
+import 'package:flutter_app/display_page.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});
@@ -8,8 +11,10 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  String output = "";
+  String? name;
+  int? age;
   final namecontroller = TextEditingController();
+  final agecontroller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -36,12 +41,10 @@ class _WelcomePageState extends State<WelcomePage> {
               children: [
                 Text(
                   'Welcome',
-                  style: TextStyle(fontSize: 18),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-
-            Text("$output"),
 
             const SizedBox(height: 20,),
             TextField(
@@ -54,19 +57,42 @@ class _WelcomePageState extends State<WelcomePage> {
                 hintText: 'Enter Name',
               ),
             ),
+            const SizedBox(height: 12,),
+            TextField(
+              controller: agecontroller,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(
+                    borderRadius:BorderRadius.all(Radius.circular(8))
+                ),
+                labelText: 'Age',
+                hintText: 'Enter Age',
+              ),
+            ),
 
             const SizedBox(height: 10,),
             ElevatedButton(
               onPressed: () {
-                debugPrint('Name : $namecontroller');
                 setState(() {
-                  output = namecontroller.text;
+                  name = namecontroller.text;
+                  age = int.parse(agecontroller.text);
                 });
+                debugPrint('Name : $name');
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DisplayPage(name: name,age: age,)));
               }, 
               child: const Text(
-                'Click', 
+                'Display', 
                 style: TextStyle(color: Color.fromARGB(255, 43, 77, 129), fontSize: 18),
               )
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/about');
+              }, 
+              child: const Text(
+                "About",
+                style: TextStyle(color: Color.fromARGB(255, 43, 77, 129), fontSize: 18),
+                )
             ),
             
           ],
