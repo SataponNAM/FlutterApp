@@ -45,7 +45,7 @@ class _DisplayPageState extends State<DisplayPage> {
                   Navigator.pushNamed(context, '/calculate');
                 }, 
                 child: const Text(
-                  "Calculate",
+                  "EV Calculate",
                   style: TextStyle(color: Color.fromARGB(255, 43, 77, 129), fontSize: 18),
                 )
               ),
