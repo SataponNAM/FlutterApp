@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/about_page.dart';
-import 'package:flutter_app/calculate_page.dart';
-import 'package:flutter_app/display_page.dart';
+import 'display_page.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({super.key});

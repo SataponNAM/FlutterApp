@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/about_page.dart';
-import 'package:flutter_app/welcome_page.dart';
+import 'about_page.dart';
+import 'welcome_page.dart';
 import 'calculate_page.dart';
+import 'list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => const WelcomePage(),
+          '/': (context) => ListPage(),
           '/about': (context) => AboutPage(),
           '/calculate' : (context) => CalculatePage(),
         },
