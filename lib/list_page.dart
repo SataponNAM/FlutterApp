@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/http_basic_page.dart';
-import 'package:flutter_app/welcome_page.dart';
+import 'http_basic_page.dart';
+import 'welcome_page.dart';
 import 'my_futurebuilder_page.dart';
 
 class ListPage extends StatefulWidget {
