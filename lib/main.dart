@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/detail_page.dart';
+import 'package:flutter_app/my_homepage_sharedpref.dart';
 import 'package:flutter_app/my_listpage.dart';
 import 'about_page.dart';
 import 'welcome_page.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           appBarTheme:
-              const AppBarTheme(color: Color.fromARGB(255, 56, 64, 90)),
+              const AppBarTheme(color: Color.fromARGB(255, 58, 72, 117)),
           colorScheme: ColorScheme.fromSeed(
               seedColor: const Color.fromARGB(255, 152, 173, 231)),
           useMaterial3: true,
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         //   '/about': (context) => AboutPage(),
         //   '/calculate' : (context) => CalculatePage(),
         // },
-        home: MyListPage(),
+        //home: MyListPage(),
+        home: MyHomePage(title: 'Homepage'),
     );
   }
 }
